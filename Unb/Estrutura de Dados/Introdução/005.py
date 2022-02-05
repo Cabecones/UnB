@@ -10,4 +10,6 @@ def primos_gemeos(n):
             resultados.append((j, j + 2))
     return resultados
 
-print(primos_gemeos(2))
+number = int(input())
+
+print(primos_gemeos(number))
