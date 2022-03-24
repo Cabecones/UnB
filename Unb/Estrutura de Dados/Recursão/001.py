@@ -12,4 +12,4 @@ def fibonacci(n):
             last = number
             count += 1
         return(number)
-fibonacci(10)
+print(fibonacci(5))
