@@ -100,8 +100,12 @@ def merge(chamada):
         result.append(f'[{x[i]}, {y[j]}]')
         i += 2
         j += 2
-    for i in result:
-        print(i, end=' ')
+    if len(result) == 2 and result[0][4] == result[1][1]:
+        print(f'[{result[0][1]}, {result[1][4]}]', end=' ')
+    else:
+        for i in result:
+            print(i, end=' ')
+
     #verificar se o y do primeiro é == ao x do segundo
 
 all_func = []
